@@ -1,0 +1,28 @@
+input,
+textarea,
+select{
+    width: 100%;
+    box-sizing: border-box;
+}
+.wrapper{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.display-flex {
+    display: flex;
+}
+.first-form{
+    max-width: 331px;
+    width: 100%;
+}
+.first-form input,
+.first-form select{
+    font-size: 14px;
+    color: #b3b3b3;
+    padding: 16px 17px 13px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+}
+.first-form textarea{
+    resize: vertical;
+}

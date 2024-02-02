@@ -3,6 +3,24 @@ textarea,
 select{
     width: 100%;
     box-sizing: border-box;
+    outline: none;
+}
+hr{
+    width: 100%;
+    margin: 50px 0px;
+    border: none;
+    border-top: 1px solid #b3b3b3;
+}
+h1{
+    text-align: center;
+}
+h2{
+    font-size: 20px;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #b3b3b3;
+    font-weight: 700;
+    font-family: "Roboto";
 }
 .wrapper{
     max-width: 960px;
@@ -18,11 +36,79 @@ select{
 .first-form input,
 .first-form select{
     font-size: 14px;
-    color: #b3b3b3;
-    padding: 16px 17px 13px;
+    padding: 12px 17px;
     border-radius: 3px;
     border: 1px solid #cccccc;
 }
 .first-form textarea{
     resize: vertical;
+    border: 1px solid #cccccc;
+    min-height: 131px;
+    max-height: 200px;
+}
+.first-form input::placeholder,
+.first-form textarea::placeholder{
+    color: #b3b3b3;
+}
+.first-form form > div{
+    margin-bottom: 9px;
+}
+.first-form input:focus{
+    border: 1px solid #3e6aff;
+    box-shadow: 0 0 2.5px rgba(62,106,255,0.55);
+}
+.first-form button{
+    width: 100%;
+    padding: 13px 0px;
+    border-radius: 3px;
+    background-color: #12d661;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    border: none;
+}
+.second-form p{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.second-form-radio input{
+    display: none;
+}
+.second-form-radio input + label{
+    position: relative;
+    padding-left: 30px;
+}
+.second-form-radio input + label:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #3e6aff;
+    border-radius: 50%;
+}
+.second-form-radio input:checked + label::after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 9px;
+    height: 9px;
+    background-color: #3e6aff;
+    border-radius: 50%;
+}
+.second-form-second{
+    width: 100%;
+    max-width: 473px;
+    max-height: 114px;
+    border-radius: 3px;
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+.date{
+    width: 100%;
+    `width: 149px;
+    max-height: 42px;
 }

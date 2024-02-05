@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="wrapper">
         <h1>Форми</h1>
@@ -49,11 +54,11 @@
                             <label for="2">Кур’єр</label>
                         </p>
                         <p>
-                            <input type="radio" id="3" name="radio">
+                            <input type="radio" id="3" name="radio" disabled>
                             <label for="3">Самовивіз</label>
                         </p>
                     </div>
-                    <div>
+                    <div class="second-form-checked">
                         <p>
                             <input type="checkbox" placeholder="" id="4" name="checkbox">
                             <label for="4">Прочитав умови договору</label>
@@ -62,15 +67,15 @@
                             <input type="checkbox" placeholder="" id="5" name="checkbox">
                             <label for="5">Згідний з ПДВ 9%</label>
                         </p>
-                        <p> 
+                        <p>
                             <input type="checkbox" placeholder="" id="6" name="checkbox">
                             <label for="6">Отримувати новини на ел. пошту</label>
                         </p>
                     </div>
                     <div class="second-form-second">
                         <div class="display-flex">
-                            <p>Статус</p>
-                            <div class="display-flex">
+                            <div class="display-flex second-form-checked align-items">
+                                <p>Статус</p>
                                 <input type="checkbox" id="7" name="status">
                                 <label for="7">Новинки</label>
                                 <input type="checkbox" id="8" name="status">
@@ -79,7 +84,7 @@
                                 <label for="9">Розпродаж</label>
                             </div>
                         </div>
-                        <div class="display-flex">
+                        <div class="display-flex align-items">
                             <p>Дата</p>
                             <div class="date">
                                 <input type="date">
@@ -103,4 +108,5 @@
         </div>
     </div>
 </body>
+
 </html>

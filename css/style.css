@@ -1,20 +1,28 @@
+body {
+    font-family: "Roboto";
+    margin: 0;
+}
+
 input,
 textarea,
-select{
+select {
     width: 100%;
     box-sizing: border-box;
     outline: none;
 }
-hr{
+
+hr {
     width: 100%;
     margin: 50px 0px;
     border: none;
     border-top: 1px solid #b3b3b3;
 }
-h1{
+
+h1 {
     text-align: center;
 }
-h2{
+
+h2 {
     font-size: 20px;
     letter-spacing: 0px;
     text-transform: uppercase;
@@ -22,42 +30,57 @@ h2{
     font-weight: 700;
     font-family: "Roboto";
 }
-.wrapper{
+
+textarea {
+    padding: 17px;
+}
+
+.wrapper {
     max-width: 960px;
     margin: 0 auto;
 }
+
 .display-flex {
     display: flex;
 }
-.first-form{
+
+.first-form {
     max-width: 331px;
     width: 100%;
 }
+
 .first-form input,
-.first-form select{
+.first-form select {
     font-size: 14px;
     padding: 12px 17px;
     border-radius: 3px;
     border: 1px solid #cccccc;
 }
-.first-form textarea{
+
+.first-form textarea {
     resize: vertical;
     border: 1px solid #cccccc;
     min-height: 131px;
     max-height: 200px;
 }
+
 .first-form input::placeholder,
-.first-form textarea::placeholder{
+.first-form textarea::placeholder {
     color: #b3b3b3;
+    font-size: 14px;
+    font-family: "Roboto";
 }
-.first-form form > div{
+
+.first-form form>div {
     margin-bottom: 9px;
 }
-.first-form input:focus{
+
+.first-form input:focus {
     border: 1px solid #3e6aff;
-    box-shadow: 0 0 2.5px rgba(62,106,255,0.55);
+    box-shadow: 0 0 2.5px rgba(62, 106, 255, 0.55);
 }
-.first-form button{
+
+.first-form button {
     width: 100%;
     padding: 13px 0px;
     border-radius: 3px;
@@ -66,20 +89,43 @@ h2{
     font-size: 14px;
     color: #ffffff;
     border: none;
+    cursor: pointer;
 }
-.second-form p{
+
+.first-form button:hover{
+    background-color: #07be51;
+    box-shadow: 0px 0px 2px 2.5px rgba(8,118,52,0.35);
+}
+
+.second-form p {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
 }
-.second-form-radio input{
+
+.second-form-radio input,
+.second-form-checked input {
     display: none;
 }
-.second-form-radio input + label{
+
+.second-form-radio input+label,
+.second-form-checked input+label {
     position: relative;
     padding-left: 30px;
 }
-.second-form-radio input + label:before{
+
+.second-form-radio input+label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.second-form-radio input:checked+label:before {
     content: "";
     position: absolute;
     top: 0;
@@ -89,7 +135,8 @@ h2{
     border: 1px solid #3e6aff;
     border-radius: 50%;
 }
-.second-form-radio input:checked + label::after{
+
+.second-form-radio input:checked+label::after {
     content: "";
     position: absolute;
     top: 4px;
@@ -99,7 +146,43 @@ h2{
     background-color: #3e6aff;
     border-radius: 50%;
 }
-.second-form-second{
+
+.second-form-checked input+label::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #cccccc;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.second-form-checked input:checked+label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #3e6aff;
+    border-radius: 3px;
+}
+
+.second-form-checked input:checked+label::after {
+    content: "";
+    position: absolute;
+    top: 2.5px;
+    left: 6.5px;
+    width: 6px;
+    height: 8px;
+    border-top: 1px solid #3e6aff;
+    border-left: 1px solid #3e6aff;
+    transform: rotate(-135deg);
+}
+
+.second-form-second {
     width: 100%;
     max-width: 473px;
     max-height: 114px;
@@ -107,7 +190,12 @@ h2{
     background-color: #f7f7f7;
     border: 1px solid #e5e5e5;
 }
-.date{
+
+.align-items {
+    align-items: center;
+}
+
+.date {
     width: 100%;
     width: 149px;
     max-height: 42px;

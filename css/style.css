@@ -140,13 +140,15 @@ textarea {
 
 .second-form-radio input,
 .second-form-checked input,
-.kovbasa input {
+.kovbasa input,
+.gender input {
     display: none;
 }
 
 .second-form-radio input+label,
 .second-form-checked input+label,
-.kovbasa input+label {
+.kovbasa input+label,
+.gender input+label{
     position: relative;
     padding-left: 30px;
 }
@@ -245,7 +247,6 @@ textarea {
 }
 
 .date {
-    width: 100%;
     width: 149px;
     max-height: 42px;
 }
@@ -296,4 +297,56 @@ textarea {
     height: 21px;
     border-radius: 10px;
     background-color: #ffffff;
+}
+.column-gap-for-kolbasa{
+    column-gap: 300px;
+    align-items: center;
+}
+.man{
+    padding-top: 34px;
+    margin-bottom: 60px;
+}
+.man input + label,
+.woman input + label{
+    padding-left: 86px;
+}
+.man input + label::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 71px;
+    height: 71px;
+    background: url(../image/man.svg);
+    transform: translateY(-50%);
+}
+.woman input + label::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 71px;
+    height: 71px;
+    background: url(../image/woman.svg);
+    transform: translateY(-50%);
+}
+.man input:checked + label::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 71px;
+    height: 71px;
+    background: url(../image/cvetasta-man.svg);
+    transform: translateY(-50%);
+}
+.woman input:checked + label::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 71px;
+    height: 71px;
+    background: url(../image/cvetasta-woman.svg);
+    transform: translateY(-50%);
 }

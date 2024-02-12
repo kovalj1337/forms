@@ -127,23 +127,24 @@
         <hr>
         <div>
             <h2>04. форма таблицею</h2>
-            <p>Заповніть усі необхідні поля</p>
+            <p class="polya">Заповніть усі необхідні поля</p>
             <table class="form-table ">
                 <tbody class="display-flex">
-                    <tr>
+                    <tr class="display-flex">
                         <td>ФІО:</td>
+                        <td>Пароль:</td>
+                        <td>Місто:</td>
+                        <td>Стать:</td>
+                        <td>Фото:</td>
+                        <td>Коментарій:</td>
+                    </tr>
+                    <tr class="display-flex">
                         <td>
                             <input type="text" placeholder="Введіть ім’я">
                         </td>
-                    </tr>
-                    <tr>
-                        <td>Пароль:</td>
                         <td>
                             <input type="password" placeholder="Введіть не менше 6 символів">
                         </td>
-                    </tr>
-                    <tr>
-                        <td>Місто:</td>
                         <td>
                             <select name="" id="">
                                 <option value="">Хмельницький</option>
@@ -152,9 +153,6 @@
                                 <option value="">Одесса</option>
                             </select>
                         </td>
-                    </tr>
-                    <tr>
-                        <td>Стать:</td>
                         <td>
                             <div class="gender-table display-flex">
                                 <div>
@@ -167,19 +165,17 @@
                                 </div>
                             </div>
                         </td>
-                    </tr>
-                    <tr>
-                        <td>Фото:</td>
                         <td>
                             <button type="file">Виберіть файл</button>
                         </td>
-                    </tr>
-                    <tr>
-                        <td>Коментарій:</td>
                         <td>
                             <textarea name="" id="" cols="30" rows="10" placeholder="Введіть текст повідомлення"></textarea>
                         </td>
-                    </tr>
+                        <td></td>
+                        <td class="register">
+                            <button type="submit" class="register">Зареєструватися</button>
+                        </td>
+                    </tr> 
                 </tbody>
             </table>
         </div>

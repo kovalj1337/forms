@@ -13,7 +13,7 @@
     src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
         url('../fonts/Roboto-Regular.woff') format('woff'),
         url('../fonts/Roboto-Regular.ttf') format('truetype');
-    font-weight: normal;
+        font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
@@ -72,6 +72,9 @@ textarea {
     border: 1px solid #cccccc;
     min-height: 131px;
     max-height: 200px;
+}
+td{
+    width: 100%;
 }
 .wrapper {
     max-width: 960px;
@@ -361,6 +364,12 @@ textarea {
     background: url(../image/cvetasta-woman.svg);
     transform: translateY(-50%);
 }
+.polya{
+    font-size: 18px;
+    color: #1f222c;
+    font-weight: 700;
+    padding: 25px 0px;
+}
 .gender-table{
     column-gap: 20px;
     width: 100%;
@@ -373,11 +382,26 @@ textarea {
 .form-table{
     width: 100%;
 }
+.form-table input:focus,
+.form-table textarea:focus{
+    border: 1px solid #3e6aff;
+    box-shadow: 0 0 2.5px rgba(62,106,255,0.55);
+}
 .form-table tbody{
     width: 100%;
     justify-content: space-between;
-    flex-direction: column;
+    
     max-width: 504px;
+}
+.form-table tr{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.form-table tr:first-child{
+    row-gap: 30px;
+}
+.form-table tr:last-child{
+    row-gap: 10px;
 }
 .form-table button{
     font-size: 14px;
@@ -388,8 +412,27 @@ textarea {
     padding: 12px 36px;
     border-radius: 3px;
     background-color: #3e6aff;
+    cursor: pointer;
+    transition: all 1s ease;
 }
-.form-table tr:last-child{
-    display: flex;
-    align-items: flex-start;
+.form-table tr .register:last-child button{
+    width: 100%;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    text-align: center;
+    padding: 12px 12px;
+    border-radius: 3px;
+    background-color: #12d661;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.form-table button:hover{
+    box-shadow: 0px 2px 2.5px rgba(15,40,126,0.35);
+    background-color: #2857f4;
+}
+.form-table tr .register:last-child button:hover{
+    background-color: #07be51;
+    box-shadow: 0px 2px 2.5px rgba(8,118,52,0.35);
 }

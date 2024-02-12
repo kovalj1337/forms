@@ -53,8 +53,26 @@ h2 {
 
 textarea {
     padding: 17px;
+    font-family: "Roboto";
 }
-
+table td input::placeholder{
+    font-size: 14px;
+    color: #b3b3b3;
+    font-weight: 400;
+}
+input,
+select {
+    font-size: 14px;
+    padding: 12px 13px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+}
+textarea {
+    resize: vertical;
+    border: 1px solid #cccccc;
+    min-height: 131px;
+    max-height: 200px;
+}
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
@@ -69,20 +87,6 @@ textarea {
     width: 100%;
 }
 
-.first-form input,
-.first-form select {
-    font-size: 14px;
-    padding: 12px 17px;
-    border-radius: 3px;
-    border: 1px solid #cccccc;
-}
-
-.first-form textarea {
-    resize: vertical;
-    border: 1px solid #cccccc;
-    min-height: 131px;
-    max-height: 200px;
-}
 
 .first-form input::placeholder,
 .first-form textarea::placeholder {
@@ -141,7 +145,8 @@ textarea {
 .second-form-radio input,
 .second-form-checked input,
 .kovbasa input,
-.gender input {
+.gender input,
+.gender-table input {
     display: none;
 }
 
@@ -152,8 +157,12 @@ textarea {
     position: relative;
     padding-left: 30px;
 }
-
-.second-form-radio input+label:before {
+.gender-table input+label{
+    position: relative;
+    padding-left: 23px;
+}
+.second-form-radio input+label:before,
+.gender-table input+label:before {
     content: "";
     position: absolute;
     top: 0;
@@ -164,7 +173,8 @@ textarea {
     border-radius: 50%;
 }
 
-.second-form-radio input:checked+label:before {
+.second-form-radio input:checked+label:before,
+.gender-table input:checked+label:before {
     content: "";
     position: absolute;
     top: 0;
@@ -175,7 +185,8 @@ textarea {
     border-radius: 50%;
 }
 
-.second-form-radio input:checked+label::after {
+.second-form-radio input:checked+label::after,
+.gender-table input:checked+label::after {
     content: "";
     position: absolute;
     top: 4px;
@@ -349,4 +360,36 @@ textarea {
     height: 71px;
     background: url(../image/cvetasta-woman.svg);
     transform: translateY(-50%);
+}
+.gender-table{
+    column-gap: 20px;
+    width: 100%;
+    font-size: 14px;
+    color: #1f222c;
+}
+.gender-table input+label{
+    padding-left: -9px;
+}
+.form-table{
+    width: 100%;
+}
+.form-table tbody{
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 504px;
+}
+.form-table button{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    border: none;
+    text-align: center;
+    padding: 12px 36px;
+    border-radius: 3px;
+    background-color: #3e6aff;
+}
+.form-table tr:last-child{
+    display: flex;
+    align-items: flex-start;
 }

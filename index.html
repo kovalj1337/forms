@@ -128,33 +128,59 @@
         <div>
             <h2>04. форма таблицею</h2>
             <p>Заповніть усі необхідні поля</p>
-            <table>
-                <tr>
-                    <td>ФІО:</td>
-                    <td>
-                        <input type="text" placeholder="Введіть ім’я">
-                    </td>
-                </tr>
-                <tr>
-                    <td>Пароль:</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Місто:</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Стать:</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Фото:</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Коментарій:</td>
-                    <td></td>
-                </tr>
+            <table class="form-table ">
+                <tbody class="display-flex">
+                    <tr>
+                        <td>ФІО:</td>
+                        <td>
+                            <input type="text" placeholder="Введіть ім’я">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Пароль:</td>
+                        <td>
+                            <input type="password" placeholder="Введіть не менше 6 символів">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Місто:</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">Хмельницький</option>
+                                <option value="">Київ</option>
+                                <option value="">Львів</option>
+                                <option value="">Одесса</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Стать:</td>
+                        <td>
+                            <div class="gender-table display-flex">
+                                <div>
+                                    <input type="radio" id="man-second" name="gender-second">
+                                    <label for="man-second">Чоловік</label>
+                                </div>
+                                <div>
+                                    <input type="radio" id="woman-second" name="gender-second">
+                                    <label for="woman-second">Жінка</label>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Фото:</td>
+                        <td>
+                            <button type="file">Виберіть файл</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Коментарій:</td>
+                        <td>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Введіть текст повідомлення"></textarea>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </div>
         <div>

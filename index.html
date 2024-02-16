@@ -14,9 +14,9 @@
 <body>
     <div class="wrapper">
         <h1>Форми</h1>
-        <div>
-            <h2>01. проста форма</h2>
+        <div class="display-flex">
             <div class="first-form display-flex">
+                <h2>01. проста форма</h2>
                 <form action="" class="">
                     <div>
                         <label><input type="text" placeholder="Введіть ім’я"></label>
@@ -37,6 +37,9 @@
                     </div>
                     <button type="submit">Зареєструватися</button>
                 </form>
+            </div>
+            <div>
+                <h2>06. фіксована форма</h2>
             </div>
         </div>
         <hr>
@@ -169,13 +172,14 @@
                             <button type="file">Виберіть файл</button>
                         </td>
                         <td>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Введіть текст повідомлення"></textarea>
+                            <textarea name="" id="" cols="30" rows="10"
+                                placeholder="Введіть текст повідомлення"></textarea>
                         </td>
                         <td></td>
                         <td class="register">
                             <button type="submit" class="register">Зареєструватися</button>
                         </td>
-                    </tr> 
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -212,20 +216,42 @@
                             </select>
                         </td>
                         <td rowspan="2">
-                            <input type="text" placeholder="">
+                            <input type="text" id="adress">
                         </td>
                     </tr>
+                </table>
+                <table>
                     <tr>
-    
+                        <td><label for="town">Місто</label></td>
+                        <td><label for="building">Будинок</label></td>
+                        <td><label for="index">Поштовий індекс</label></td>
                     </tr>
                     <tr>
-    
+                        <td><input type="text" id="town"></td>
+                        <td><input type="text" id="building"></td>
+                        <td><input type="text" id="index"></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="oplata" class="oplata">
+                            <label for="oplata">Я погоджуюсь з правилами оплати та доставки товару</label>
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+                <table>
+                    <tr class="display-flex buttons">
+                        <td>
+                            <button type="reset" class="reset">Повернутися назад</button>
+                        </td>
+                        <td>
+                            <button type="submit" class="submit">Оформити покупку</button>
+                        </td>
                     </tr>
                 </table>
             </form>
-        </div>
-        <div>
-            <h2></h2>
         </div>
     </div>
 </body>

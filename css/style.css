@@ -76,6 +76,10 @@ textarea {
     max-height: 200px;
 }
 
+table{
+    width: 100%;
+}
+
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
@@ -86,6 +90,7 @@ textarea {
 }
 
 .first-form {
+    flex-direction: column;
     max-width: 331px;
     width: 100%;
 }
@@ -149,14 +154,16 @@ textarea {
 .second-form-checked input,
 .kovbasa input,
 .gender input,
-.gender-table input {
+.gender-table input,
+.oplata {
     display: none;
 }
 
 .second-form-radio input+label,
 .second-form-checked input+label,
 .kovbasa input+label,
-.gender input+label{
+.gender input+label,
+.oplata + label{
     position: relative;
     padding-left: 30px;
 }
@@ -200,7 +207,8 @@ textarea {
     border-radius: 50%;
 }
 
-.second-form-checked input+label::before {
+.second-form-checked input+label::before,
+.oplata + label::before {
     content: "";
     position: absolute;
     top: 0px;
@@ -212,7 +220,8 @@ textarea {
     border-radius: 3px;
 }
 
-.second-form-checked input:checked+label::before {
+.second-form-checked input:checked+label::before,
+.oplata:checked+label::before {
     content: "";
     position: absolute;
     top: 0;
@@ -223,7 +232,8 @@ textarea {
     border-radius: 3px;
 }
 
-.second-form-checked input:checked+label::after {
+.second-form-checked input:checked+label::after,
+.oplata:checked+label::after {
     content: "";
     position: absolute;
     top: 2.5px;
@@ -442,6 +452,9 @@ textarea {
 .table-form-form{
     max-width: 681px;
     width: 100%;
+    font-size: 13px;
+    color: #b3b3b3;
+    font-weight: 400;
 }
 .form-table-second td{
     max-width: 221px;
@@ -455,3 +468,38 @@ textarea {
 .form-table-third tr:nth-child(2) td:last-child{
     max-width: 451px;
 }
+.reset{
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #85868d;
+    font-size: 14px;
+    color: #6e6f77;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px 26px;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.reset:hover{
+    background-color: #85868d;
+    color: #ffffff;
+}
+.submit{
+    background-color: #12d661;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    padding: 14px 27px;
+    border: none;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.submit:hover{
+    background-color: #07be51;
+    box-shadow: 0px 2px 2.5px rgba(8,118,52,0.35);
+}
+.buttons{
+    justify-content: space-between;
+} 

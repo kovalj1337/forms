@@ -62,20 +62,20 @@ table td input::placeholder{
 }
 input,
 select {
+    box-sizing: border-box;
     font-size: 14px;
     padding: 12px 13px;
     border-radius: 3px;
     border: 1px solid #cccccc;
 }
 textarea {
+    box-sizing: border-box;
     resize: vertical;
     border: 1px solid #cccccc;
     min-height: 131px;
     max-height: 200px;
 }
-td{
-    width: 100%;
-}
+
 .wrapper {
     max-width: 960px;
     margin: 0 auto;
@@ -403,6 +403,9 @@ td{
 .form-table tr:last-child{
     row-gap: 10px;
 }
+.form-table td{
+    width: 100%;
+}
 .form-table button{
     font-size: 14px;
     color: #ffffff;
@@ -435,4 +438,20 @@ td{
 .form-table tr .register:last-child button:hover{
     background-color: #07be51;
     box-shadow: 0px 2px 2.5px rgba(8,118,52,0.35);
+}
+.table-form-form{
+    max-width: 681px;
+    width: 100%;
+}
+.form-table-second td{
+    max-width: 221px;
+}
+.form-table-second input{
+    width: 100%;
+}
+.form-table-third tr:nth-child(2) td:first-child{
+    width: 221px;
+}
+.form-table-third tr:nth-child(2) td:last-child{
+    max-width: 451px;
 }

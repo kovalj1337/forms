@@ -12,9 +12,10 @@
 </head>
 
 <body>
+    <script src="scriptik.js"></script>
     <div class="wrapper">
         <h1>Форми</h1>
-        <div class="display-flex">
+        <div class="display-flex first-and-sixth-forms">
             <div class="first-form display-flex">
                 <h2>01. проста форма</h2>
                 <form action="" class="">
@@ -25,12 +26,14 @@
                         <label><input type="email" placeholder="Email"></label>
                     </div>
                     <div>
-                        <select name="select" id="">
-                            <option value="" disabled selected="selected">Ваше місто</option>
-                            <option value="">Київ</option>
-                            <option value="">Львів</option>
-                            <option value="">Хмельницький</option>
-                        </select>
+                        <label for="mista" class="strelochka">
+                            <select name="select" id="mista">
+                                <option value="" disabled selected="selected">Ваше місто</option>
+                                <option value="">Київ</option>
+                                <option value="">Львів</option>
+                                <option value="">Хмельницький</option>
+                            </select>
+                        </label>
                     </div>
                     <div>
                         <textarea name="" id="" cols="30" rows="10" placeholder="Email"></textarea>
@@ -38,8 +41,26 @@
                     <button type="submit">Зареєструватися</button>
                 </form>
             </div>
-            <div>
+            <div class="fixed">
+                <button class="lol" id="lol">Відкрити форму</button>
                 <h2>06. фіксована форма</h2>
+                <div class="sixth-form display-flex" id="popup">
+                    <p>
+                        <label for="login">Логін</label>
+                        <input type="text" id="login">
+                    </p>
+                    <p>
+                        <label for="password">Пароль</label>
+                        <input type="password" name="" id="password">
+                    </p>
+                    <a href="#">Забули пароль?</a>
+                    <p>
+                        <input type="checkbox" name="" id="remember" class="oplata">
+                        <label for="remember" class="remember">Запам’ятати пароль</label>
+                    </p>
+                    <button type="submit">Увійти</button>
+                    <span class="chrestick" id="cancel"></span>
+                </div>
             </div>
         </div>
         <hr>
@@ -149,12 +170,14 @@
                             <input type="password" placeholder="Введіть не менше 6 символів">
                         </td>
                         <td>
-                            <select name="" id="">
-                                <option value="">Хмельницький</option>
-                                <option value="">Київ</option>
-                                <option value="">Львів</option>
-                                <option value="">Одесса</option>
-                            </select>
+                            <label for="" class="strelochka">
+                                <select name="" id="">
+                                    <option value="">Хмельницький</option>
+                                    <option value="">Київ</option>
+                                    <option value="">Львів</option>
+                                    <option value="">Одесса</option>
+                                </select>
+                            </label>
                         </td>
                         <td>
                             <div class="gender-table display-flex">
@@ -207,13 +230,15 @@
                     </tr>
                     <tr>
                         <td>
-                            <select name="" id="country">
-                                <option value="">Індонезія</option>
-                                <option value="">Сомалі</option>
-                                <option value="">Гондурас</option>
-                                <option value="">Keniya</option>
-                                <option value="">Римська Імперія</option>
-                            </select>
+                            <label for="" class="strelochka">
+                                <select name="" id="country">
+                                    <option value="">Індонезія</option>
+                                    <option value="">Сомалі</option>
+                                    <option value="">Гондурас</option>
+                                    <option value="">Keniya</option>
+                                    <option value="">Римська Імперія</option>
+                                </select>
+                            </label>
                         </td>
                         <td rowspan="2">
                             <input type="text" id="adress">

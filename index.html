@@ -41,32 +41,34 @@
                     <button type="submit">Зареєструватися</button>
                 </form>
             </div>
+            <button class="lol" id="lol">Відкрити форму</button>
             <div class="fixed">
-                <button class="lol" id="lol">Відкрити форму</button>
-                <h2>06. фіксована форма</h2>
-                <div class="sixth-form display-flex" id="popup">
-                    <p>
-                        <label for="login">Логін</label>
-                        <input type="text" id="login">
-                    </p>
-                    <p>
-                        <label for="password">Пароль</label>
-                        <input type="password" name="" id="password">
-                    </p>
-                    <a href="#">Забули пароль?</a>
-                    <p>
-                        <input type="checkbox" name="" id="remember" class="oplata">
-                        <label for="remember" class="remember">Запам’ятати пароль</label>
-                    </p>
-                    <button type="submit">Увійти</button>
-                    <span class="chrestick" id="cancel"></span>
+                <div id="popup" class="display-flex block">
+                    <h2>06. фіксована форма</h2>
+                    <div class="sixth-form display-flex" >
+                        <p>
+                            <label for="login">Логін</label>
+                            <input type="text" id="login">
+                        </p>
+                        <p>
+                            <label for="password">Пароль</label>
+                            <input type="password" name="" id="password">
+                        </p>
+                        <a href="#">Забули пароль?</a>
+                        <p>
+                            <input type="checkbox" name="" id="remember" class="oplata">
+                            <label for="remember" class="remember">Запам’ятати пароль</label>
+                        </p>
+                        <button type="submit">Увійти</button>
+                        <span class="chrestick" id="cancel"></span>
+                    </div>
                 </div>
             </div>
         </div>
         <hr>
         <div>
             <h2>02. елементи</h2>
-            <div class="second-form display-flex">
+            <div class="second-form">
                 <form action="" class="display-flex">
                     <div class="second-form-radio">
                         <p>
@@ -77,7 +79,7 @@
                             <input type="radio" id="2" name="radio">
                             <label for="2">Кур’єр</label>
                         </p>
-                        <p>
+                        <p class="disabled">
                             <input type="radio" id="3" name="radio" disabled>
                             <label for="3">Самовивіз</label>
                         </p>
@@ -91,15 +93,15 @@
                             <input type="checkbox" placeholder="" id="5" name="checkbox">
                             <label for="5">Згідний з ПДВ 9%</label>
                         </p>
-                        <p>
-                            <input type="checkbox" placeholder="" id="6" name="checkbox">
+                        <p class="disabled">
+                            <input type="checkbox" placeholder="" id="6" name="checkbox" disabled>
                             <label for="6">Отримувати новини на ел. пошту</label>
                         </p>
                     </div>
                     <div class="second-form-second">
                         <div class="display-flex">
                             <div class="display-flex second-form-checked align-items">
-                                <p>Статус</p>
+                                <p class="title">Статус</p>
                                 <input type="checkbox" id="7" name="status">
                                 <label for="7">Новинки</label>
                                 <input type="checkbox" id="8" name="status">
@@ -124,11 +126,11 @@
             <div class="display-flex column-gap-for-kolbasa">
                 <div class="gender">
                     <p class="man">
-                        <input type="checkbox" name="" id="man">
+                        <input type="radio" name="gender" id="man">
                         <label for="man">Чоловік</label>
                     </p>
                     <p class="woman">
-                        <input type="checkbox" name="" id="woman">
+                        <input type="radio" name="gender" id="woman">
                         <label for="woman">Жінка</label>
                     </p>
                 </div>
@@ -152,7 +154,7 @@
         <div>
             <h2>04. форма таблицею</h2>
             <p class="polya">Заповніть усі необхідні поля</p>
-            <table class="form-table ">
+            <table class="form-table">
                 <tbody class="display-flex">
                     <tr class="display-flex">
                         <td>ФІО:</td>
@@ -222,14 +224,14 @@
                         <td><input type="text" id="number"></td>
                     </tr>
                 </table>
-                <hr>
+                <hr class="obmezhenya">
                 <table class="form-table-third">
                     <tr>
                         <td><label for="country">Країна</label></td>
                         <td><label for="adress">Адреса</label></td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="risochka">
                             <label for="" class="strelochka">
                                 <select name="" id="country">
                                     <option value="">Індонезія</option>
@@ -245,7 +247,7 @@
                         </td>
                     </tr>
                 </table>
-                <table>
+                <table class="table-form-fourth">
                     <tr>
                         <td><label for="town">Місто</label></td>
                         <td><label for="building">Будинок</label></td>
@@ -265,7 +267,7 @@
                         </td>
                     </tr>
                 </table>
-                <hr>
+                <hr class="obmezhenya">
                 <table>
                     <tr class="display-flex buttons">
                         <td>

@@ -512,7 +512,7 @@ label.remember {
     position: absolute;
     top: 50%;
     left: 0px;
-    width: 71px;
+    width: 70px;
     height: 71px;
     background: url(../image/man.svg);
     transform: translateY(-50%);
@@ -523,7 +523,7 @@ label.remember {
     position: absolute;
     top: 50%;
     left: 0px;
-    width: 71px;
+    width: 70px;
     height: 71px;
     background: url(../image/woman.svg);
     transform: translateY(-50%);
@@ -535,7 +535,7 @@ label.remember {
     top: 50%;
     left: 0px;
     width: 70px;
-    height: 70px;
+    height: 71px;
     background: url(../image/cvetasta-man.svg);
     transform: translateY(-50%);
 }
@@ -546,7 +546,7 @@ label.remember {
     top: 50%;
     left: 0px;
     width: 70px;
-    height: 70px;
+    height: 71px;
     background: url(../image/cvetasta-woman.svg);
     transform: translateY(-50%);
 }
@@ -609,7 +609,7 @@ label.remember {
     content: "";
     position: absolute;
     top: 12px;
-    right: 29px;
+    right: 33px;
     width: 1px;
     height: 19px;
     background-color: #ccc;

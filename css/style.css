@@ -677,9 +677,9 @@ label.remember {
 .form-table-third tr:nth-child(2) td:last-child {
     max-width: 451px;
 }
-.table-form-fourth{
+.table-form-fourth td{
     border-collapse: collapse;
-    margin-right: 7px;
+    padding-right: 7px;
 }
 .reset {
     border-radius: 3px;
